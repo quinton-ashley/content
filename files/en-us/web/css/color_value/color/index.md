@@ -164,15 +164,15 @@ div {
 ```
 
 ```css
-@media (color-gamut: p3) {
+@media (color-gamut: srgb) {
   div {
-    background-color: color(display-p3 1 0 0);
+    background-color: color(srgb 1 0 0);
   }
 }
 
-@media (color-gamut: srgb) {
+@media (color-gamut: p3) {
   div:nth-child(2) {
-    background-color: color(srgb 1 0 0);
+    background-color: color(display-p3 1 0 0);
   }
 }
 
